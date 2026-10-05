@@ -2,7 +2,7 @@
 
 **Predict. Win. Repeat.** Short UP/DOWN rounds on Robinhood Chain, staked in ETH, settled by a contract that reads its own prices. Fully open source: the website, the contract, the settlement bot and the integration scripts are all in this repository.
 
-Website: [olaz.app](https://olaz.app) · X: [@olaz](https://x.com/olaz) · Contract: [`0xee42017b063ccFBEAE06A319a629D2A023dAFd10`](https://robinhoodchain.blockscout.com/address/0xee42017b063ccFBEAE06A319a629D2A023dAFd10?tab=contract) (source verified)
+Website: [olaz.app](https://olaz.app) · X: [@olazapp](https://x.com/olazapp) · Contract: [`0xee42017b063ccFBEAE06A319a629D2A023dAFd10`](https://robinhoodchain.blockscout.com/address/0xee42017b063ccFBEAE06A319a629D2A023dAFd10?tab=contract) (source verified)
 
 ## The problem
 
@@ -137,13 +137,13 @@ scripts/                  brand image renderer, constructor-argument encoder
 | | Address |
 | --- | --- |
 | OlazRounds | [`0xee42017b063ccFBEAE06A319a629D2A023dAFd10`](https://robinhoodchain.blockscout.com/address/0xee42017b063ccFBEAE06A319a629D2A023dAFd10?tab=contract), block 80279800, source verified |
-| $OLAZ token | Published at launch. Only trust the address shown on olaz.app and [@olaz](https://x.com/olaz). |
+| $OLAZ token | Published at launch. Only trust the address shown on olaz.app and [@olazapp](https://x.com/olazapp). |
 
 ## Security and status
 
 - The contract has **not been audited**. Stake only what you can afford to lose.
 - Pool and feed prices can be pushed by large trades or arrive late. Per-round pot caps (25 ETH for ETH, 1 to 5 ETH for tokens, 5 ETH for stocks) limit what manipulation could win; they do not remove the risk.
-- Found a vulnerability? Please reach us privately on [@olaz](https://x.com/olaz) before opening a public issue.
+- Found a vulnerability? Please reach us privately on [@olazapp](https://x.com/olazapp) before opening a public issue.
 
 ## Contributing
 

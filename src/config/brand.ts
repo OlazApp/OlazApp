@@ -22,8 +22,8 @@ export const BRAND = {
   tagline: "Predict token moves. Stake ETH. Settle instantly.",
   description:
     "Olaz is a short-round prediction market on Robinhood Chain: call UP or DOWN on tokens, stocks and chain metrics over 5 minutes, 15 minutes or an hour.",
-  x: "https://x.com/olaz",
-  xHandle: "@olaz",
+  x: "https://x.com/olazapp",
+  xHandle: "@olazapp",
   // Public source repository. Kept off the site until the owner publishes it.
   github: "https://github.com/",
   ca: CA,
