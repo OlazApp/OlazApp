@@ -1,0 +1,160 @@
+{
+  "contract": "0xee42017b063ccFBEAE06A319a629D2A023dAFd10",
+  "deployBlock": 80279800,
+  "deployTx": "0xb135eee9be546d7019d8a02dd0d0e3742864510c904fb2e76752ca15c102d05e",
+  "chainId": 4663,
+  "markets": [
+    {
+      "index": 0,
+      "id": "eth-5m",
+      "kind": "eth-pool",
+      "source": "0x52e65B17fB6E5BA00Ed806f37Afcd2DaA50271Ca",
+      "durationSeconds": 300,
+      "maxPotEth": 25
+    },
+    {
+      "index": 1,
+      "id": "eth-15m",
+      "kind": "eth-pool",
+      "source": "0x52e65B17fB6E5BA00Ed806f37Afcd2DaA50271Ca",
+      "durationSeconds": 900,
+      "maxPotEth": 25
+    },
+    {
+      "index": 2,
+      "id": "eth-1h",
+      "kind": "eth-pool",
+      "source": "0x52e65B17fB6E5BA00Ed806f37Afcd2DaA50271Ca",
+      "durationSeconds": 3600,
+      "maxPotEth": 25
+    },
+    {
+      "index": 3,
+      "id": "cashcat-5m",
+      "kind": "token-pool",
+      "source": "0xA70fc67C9F69da90B63a0e4C05D229954574E313",
+      "durationSeconds": 300,
+      "maxPotEth": 5
+    },
+    {
+      "index": 4,
+      "id": "cashcat-15m",
+      "kind": "token-pool",
+      "source": "0xA70fc67C9F69da90B63a0e4C05D229954574E313",
+      "durationSeconds": 900,
+      "maxPotEth": 5
+    },
+    {
+      "index": 5,
+      "id": "cashcat-1h",
+      "kind": "token-pool",
+      "source": "0xA70fc67C9F69da90B63a0e4C05D229954574E313",
+      "durationSeconds": 3600,
+      "maxPotEth": 5
+    },
+    {
+      "index": 6,
+      "id": "pons-5m",
+      "kind": "token-pool",
+      "source": "0x10CC6BD38112cAc182db90B6a71d8Bb5939526bA",
+      "durationSeconds": 300,
+      "maxPotEth": 5
+    },
+    {
+      "index": 7,
+      "id": "pons-15m",
+      "kind": "token-pool",
+      "source": "0x10CC6BD38112cAc182db90B6a71d8Bb5939526bA",
+      "durationSeconds": 900,
+      "maxPotEth": 5
+    },
+    {
+      "index": 8,
+      "id": "pons-1h",
+      "kind": "token-pool",
+      "source": "0x10CC6BD38112cAc182db90B6a71d8Bb5939526bA",
+      "durationSeconds": 3600,
+      "maxPotEth": 5
+    },
+    {
+      "index": 9,
+      "id": "ai-5m",
+      "kind": "token-pool",
+      "source": "0xc4a21f9d6485FC5893DD4A491B320a83DAF4Da1D",
+      "durationSeconds": 300,
+      "maxPotEth": 2
+    },
+    {
+      "index": 10,
+      "id": "ai-15m",
+      "kind": "token-pool",
+      "source": "0xc4a21f9d6485FC5893DD4A491B320a83DAF4Da1D",
+      "durationSeconds": 900,
+      "maxPotEth": 2
+    },
+    {
+      "index": 11,
+      "id": "ai-1h",
+      "kind": "token-pool",
+      "source": "0xc4a21f9d6485FC5893DD4A491B320a83DAF4Da1D",
+      "durationSeconds": 3600,
+      "maxPotEth": 2
+    },
+    {
+      "index": 12,
+      "id": "index-5m",
+      "kind": "token-pool",
+      "source": "0xD29893fFac8b29eC4Db2cfE0CDB3FE1377c028Ff",
+      "durationSeconds": 300,
+      "maxPotEth": 1
+    },
+    {
+      "index": 13,
+      "id": "index-15m",
+      "kind": "token-pool",
+      "source": "0xD29893fFac8b29eC4Db2cfE0CDB3FE1377c028Ff",
+      "durationSeconds": 900,
+      "maxPotEth": 1
+    },
+    {
+      "index": 14,
+      "id": "index-1h",
+      "kind": "token-pool",
+      "source": "0xD29893fFac8b29eC4Db2cfE0CDB3FE1377c028Ff",
+      "durationSeconds": 3600,
+      "maxPotEth": 1
+    },
+    {
+      "index": 15,
+      "id": "nvda-1h",
+      "kind": "chainlink-feed",
+      "source": "0x379EC4f7C378F34a1B47E4F3cbeBCbAC3E8E9F15",
+      "durationSeconds": 3600,
+      "maxPotEth": 5
+    },
+    {
+      "index": 16,
+      "id": "tsla-1h",
+      "kind": "chainlink-feed",
+      "source": "0x4A1166a659A55625345e9515b32adECea5547C38",
+      "durationSeconds": 3600,
+      "maxPotEth": 5
+    },
+    {
+      "index": 17,
+      "id": "aapl-1h",
+      "kind": "chainlink-feed",
+      "source": "0x6B22A786bAa607d76728168703a39Ea9C99f2cD0",
+      "durationSeconds": 3600,
+      "maxPotEth": 5
+    },
+    {
+      "index": 18,
+      "id": "googl-1h",
+      "kind": "chainlink-feed",
+      "source": "0xF6f373a037c30F0e5010d854385cA89185AE638b",
+      "durationSeconds": 3600,
+      "maxPotEth": 5
+    }
+  ]
+}

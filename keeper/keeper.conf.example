@@ -1,0 +1,4 @@
+# Copy to keeper.conf on the server. Nothing here is secret.
+ROUNDS_CONTRACT=
+KEEPER_RPC_URL=https://rpc.mainnet.chain.robinhood.com
+KEEPER_CHAIN_ID=4663

@@ -1,0 +1,13 @@
+{
+  "name": "olaz-keeper",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Settles ended OlazRounds rounds on Robinhood Chain.",
+  "scripts": {
+    "start": "node keeper.mjs"
+  },
+  "dependencies": {
+    "viem": "2.38.0"
+  }
+}

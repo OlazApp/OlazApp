@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@theme {
+  /* Stone paper, ink, and a tote board: a race card you read standing up. */
+  --color-paper: #efede6;
+  --color-paper-2: #e4e1d6;
+  --color-card: #faf9f5;
+  --color-ink: #111714;
+  --color-ink-2: #48504b;
+  --color-ink-3: #767e7a;
+  --color-line: rgba(17, 23, 20, 0.12);
+  --color-line-2: rgba(17, 23, 20, 0.26);
+
+  --color-up: #0f8a4f;
+  --color-up-deep: #0b6b3d;
+  --color-up-soft: #dcefe3;
+  --color-down: #d8432b;
+  --color-down-deep: #b23520;
+  --color-down-soft: #f8e1da;
+  --color-amber: #f4b428;
+  --color-amber-deep: #c98a06;
+  --color-amber-soft: #fcefc9;
+
+  --color-board: #121915;
+  --color-board-2: #1b241f;
+  --color-board-3: #26302a;
+  --color-chalk: #efede6;
+
+  --font-sans: var(--font-instrument), "Instrument Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-shoulders), "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --animate-pulse-dot: pulse-dot 1.8s ease-in-out infinite;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-ink);
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+  }
+  .btn:not(:disabled):active {
+    transform: translateY(1px);
+  }
+  .btn-ink {
+    background: var(--color-ink);
+    color: var(--color-chalk);
+  }
+  .btn-ink:not(:disabled):hover {
+    background: #26302a;
+  }
+  .btn-accent {
+    background: var(--color-amber);
+    color: var(--color-ink);
+    border-color: var(--color-amber-deep);
+  }
+  .btn-accent:not(:disabled):hover {
+    background: #f7c24e;
+  }
+  .btn-ghost {
+    background: var(--color-card);
+    color: var(--color-ink);
+    border-color: var(--color-line-2);
+  }
+  .btn-ghost:not(:disabled):hover {
+    border-color: var(--color-ink);
+  }
+  .btn-up {
+    background: var(--color-up);
+    color: #fff;
+  }
+  .btn-up:not(:disabled):hover {
+    background: var(--color-up-deep);
+  }
+  .btn-down {
+    background: var(--color-down);
+    color: #fff;
+  }
+  .btn-down:not(:disabled):hover {
+    background: var(--color-down-deep);
+  }
+  .btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  /* Small caps label used for column heads and field names. */
+  .label {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+  .h-display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 0.9;
+    text-transform: uppercase;
+  }
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .panel {
+    background: var(--color-card);
+    border: 1px solid var(--color-line-2);
+    border-radius: 8px;
+  }
+  /* The tote board: a dark slab with chalk figures. */
+  .board {
+    background: var(--color-board);
+    color: var(--color-chalk);
+    border-radius: 8px;
+  }
+  .rule {
+    border-color: var(--color-line);
+  }
+  /* Ruled paper: faint horizontal lines like a printed race card. */
+  .ruled {
+    background-image: repeating-linear-gradient(180deg, transparent 0 31px, rgba(17, 23, 20, 0.05) 31px 32px);
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .chip-up {
+    background: var(--color-up-soft);
+    color: var(--color-up-deep);
+  }
+  .chip-down {
+    background: var(--color-down-soft);
+    color: var(--color-down-deep);
+  }
+  .chip-flat {
+    background: var(--color-paper-2);
+    color: var(--color-ink-2);
+  }
+  .chip-amber {
+    background: var(--color-amber-soft);
+    color: #7a5300;
+  }
+  .field {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--color-line-2);
+    background: var(--color-card);
+    padding: 0.55rem 0.75rem;
+    color: var(--color-ink);
+    outline: none;
+  }
+  .field:focus {
+    border-color: var(--color-ink);
+  }
+  .scroll-x {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .scroll-x::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

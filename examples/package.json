@@ -1,0 +1,14 @@
+{
+  "name": "olaz-examples",
+  "private": true,
+  "type": "module",
+  "description": "Use the OlazRounds contract directly, without the website.",
+  "scripts": {
+    "read": "node read-round.mjs",
+    "enter": "node enter.mjs",
+    "claim": "node claim.mjs"
+  },
+  "dependencies": {
+    "viem": "2.38.0"
+  }
+}

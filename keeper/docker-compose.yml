@@ -1,0 +1,15 @@
+# OlazRounds keeper. Config lives in keeper.conf (contract address and RPC,
+# nothing secret); the keeper's own key is keys/keeper.key, readable only here.
+services:
+  keeper:
+    build: .
+    image: olaz-keeper
+    restart: unless-stopped
+    env_file: keeper.conf
+    environment:
+      KEEPER_KEY_FILE: /run/keeper/keeper.key
+    volumes:
+      - ./keys:/run/keeper:ro
+    logging:
+      driver: json-file
+      options: { max-size: "5m", max-file: "3" }
